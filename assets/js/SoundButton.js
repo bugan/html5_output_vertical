@@ -1,0 +1,3 @@
+function SoundButton(srcImage,srcSound){
+    
+}

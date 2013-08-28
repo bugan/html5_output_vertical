@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns       = "http://www.w3.org/ns/widgets"
+        id          = "http://example.org/exampleWidget"
+        version     = "2.0 Beta"
+        height      = "768"
+        width       = "1024"
+        viewmodes   = "fullscreen">
+ 
+  <name short="Apostila PhoneGap">
+    Apostila PhoneGap APK
+  </name>
+
+  <preference name = "apikey" value = "ea31ad3a23fd2f" readonly = "true" />
+
+  <description>
+    A sample widget to demonstrate the power of an digital Book.
+  </description>
+
+  <author href  = "http://foo-bar.example.org/" email = "foo-bar@example.org"> Foo Apostila Corp </author>
+
+  <icon src="icon.png" />
+  
+  <preference name = "orientation" value = "default" />
+  <preference name = "target-device" value = "universal" />
+  <preference name = "fullscreen" value = "false" />
+
+  <license>
+	Example license (based on MIT License)
+	Copyright (c) 2013 The Foo Bar Corp.
+	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+	OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+	MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+	IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+	CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+	INSULT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+	SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+  </license>
+</widget>

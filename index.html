@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html manifest="offlineManifest.manifest">
+<head>
+<meta charset="utf-8">
+<title>MA-BOOK1-2A_unidade1</title>
+<meta name="generator" content="In5 v1.4.22">
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script type="text/javascript">window.jQuery || document.write('<script src="assets/js/jquery.min.js"><\/script>')</script>
+<script type="text/javascript" src="assets/js/vmouse.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.scrollTo.min.js"></script>
+<script type="text/javascript" src="assets/js/in5.config.js"></script>
+<link rel="stylesheet" href="assets/css/pages.css">
+
+<script type="text/javascript" src="assets/js/interacoes.js"></script>
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+</head>
+
+<body>
+<!-- 
+    Audio 
+-->
+<audio id="correto" preload="none">
+    <source src="assets/audio/correto.mp3" type="audio/mpeg"/>
+</audio>
+    
+<audio id="errado" preload="none">
+    <source src="assets/audio/errado.mp3" type="audio/mpeg"/>
+</audio>
+    
+<div class="black_overlay" id="lightBox"></div>
+<div id="container" >
+<ul class="pages paper-vertical" id="slider">
+
+  <li class="page" data-name="5">
+    <img class="pageItem" src="assets/images/Capa.jpg" alt="page item"/>
+    <img class="pageItem" src="assets/images/bot_song_fingers.png" alt="page item" style="position: absolute;top: 88%;left: 5%;" onclick="createVideo('assets/video/fingers_family.mp4')"/>
+    <img class="pageItem" src="assets/images/bot_song_indians.png" alt="page item"style="position: absolute;top: 82%;left: 5%;" onclick="createVideo('assets/video/indians.mp4')"/>
+    <img class="pageItem" src="assets/images/livro.png" alt="page item"style="position: absolute;top: 57%;left: 69%;"  onclick="window.location.href ='unidade_1.html' "/>
+
+  </li>
+</ul>
+<nav>
+<button id="nextBtn" name="nextBtn">&nbsp;</button>
+<button id="backBtn" name="backBtn">&nbsp;</button>
+</nav>
+
+<div id="prefooter" style="float:left;height:1px;">&nbsp;</div>
+</div>
+<div id="in5footer">Built with <a href="http://ajarproductions.com/pages/products/in5/?ref=footer" target="_blank" >In5</a>.</div>
+</body>
+
+</html>

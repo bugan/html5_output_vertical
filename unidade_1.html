@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html manifest="offlineManifest.manifest">
+
+<head>
+<meta charset="utf-8">
+<title>MA-BOOK1-2A_unidade1</title>
+<meta name="generator" content="In5 v1.4.22">
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+
+<script type="text/javascript">window.jQuery || document.write('<script src="assets/js/jquery.min.js"><\/script>')</script>
+<script type="text/javascript" src="assets/js/vmouse.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.scrollTo.min.js"></script>
+<script type="text/javascript" src="assets/js/in5.config.js"></script>
+<link rel="stylesheet" href="assets/css/pages.css">
+    
+<script type="text/javascript" src="assets/js/classes/path.js"></script>
+<script type="text/javascript" src="assets/js/classes/rect.js"></script>
+<script type="text/javascript" src="assets/js/classes/peca.js"></script>
+<script type="text/javascript" src="assets/js/classes/point.js"></script>
+<script type="text/javascript" src="assets/js/classes/color.js"></script>
+<script type="text/javascript" src="assets/js/classes/endPoint.js"></script>
+<script type="text/javascript" src="assets/js/classes/answerTag.js"></script>
+
+<script type="text/javascript" src="assets/js/completeGaps.js"></script>
+<script type="text/javascript" src="assets/js/cacaPalavras.js"></script>
+<script type="text/javascript" src="assets/js/Letra.js"></script>
+<script type="text/javascript" src="assets/js/memoryGame.js"></script>
+<script type="text/javascript" src="assets/js/Carta.js"></script>
+<script type="text/javascript" src="assets/js/liguePontos.js"></script>
+<script type="text/javascript" src="assets/js/drawCanvas.js"></script>
+<script type="text/javascript" src="assets/js/createWord.js"></script>
+<script type="text/javascript" src="assets/js/interacoes.js"></script>
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+</head>
+
+<body onload="separaItensImagem()">
+<!-- 
+    Audio 
+-->
+<audio id="correto" preload="none">
+    <source src="assets/audio/correto.mp3" type="audio/mpeg"/>
+</audio>
+    
+<audio id="errado" preload="none">
+    <source src="assets/audio/errado.mp3" type="audio/mpeg"/>
+</audio>
+    
+<div class="black_overlay" id="lightBox"></div>
+<div id="container" >
+<ul class="pages paper-vertical" id="slider">
+
+  <li class="page" data-name="5">
+    <img class="pageItem" src="assets/images/U1_L1_capa.png" alt="page item" onclick="createVideo('assets/video/teste2_H_1.mp4')"/>
+  </li>
+  <li class="cabecalho page" data-name="6">
+    
+    <img class="pageItem" src="assets/images/item_5.png" alt="page item"/>
+    <img class="SoundButton5" src="assets/images/yuri_5.png" alt="page item"  onclick="playSound('yuri_5')"/>
+    <img class="SoundButton5" src="assets/images/candy_5.png" alt="page item" onclick="playSound('andy_5')"/>
+    <img class="SoundButton5" src="assets/images/yuri_5_2.png" alt="page item" style="clear:both;" onclick="playSound('yuri_5_2')"/>
+    <img class="SoundButton5" src="assets/images/kim_5.png" alt="page item" onclick="playSound('kim_5')"/>
+    
+   
+    <audio  id="yuri_5" preload="none">
+        <source src="assets/audio/pagina_6/YURI.mp3" type="audio/mpeg"/>
+    </audio>
+    
+     <audio  id="andy_5" preload="none">
+        <source src="assets/audio/pagina_6/TEACHER.mp3" type="audio/mpeg"/>
+    </audio>
+    
+     <audio  id="yuri_5_2" preload="none">
+        <source src="assets/audio/pagina_6/WILLY.mp3" type="audio/mpeg"/>
+    </audio>
+    
+     <audio  id="kim_5" preload="none">
+        <source src="assets/audio/pagina_6/KIM.mp3" type="audio/mpeg"/>
+    </audio>
+    
+  </li>
+  <li class="page" data-name="7">
+   
+    <img class="pageItem" src="assets/images/item_6.png" alt="page item"/>
+    <canvas id="cannvas7" width="480px" height="700px" style="position:relative;top:25%;left:22%;"></canvas>
+    
+  </li>
+  
+  <li class="cabecalho page" data-name="8">
+    <img class="pageItem" src="assets/images/item_8.png" alt="page item"/>
+    <canvas id="canvas9_1" width="530" height="300px" style="position: relative;top: 13%;left:25%;"></canvas>
+    <img src="assets/images/cabecalho_9.png" style="position: relative;top:12%"/>
+    <div class="page_9_bnt"  onclick="playSound('tarde')"></div>
+    <div class="page_9_bnt"  onclick="playSound('manha')"></div>
+    <div class="page_9_bnt"  onclick="playSound('tchau')"></div>
+    
+    <canvas id="canvas9_2" width="768" height="425px" style="position: relative;top: 9%;left:0%;   "></canvas>
+    
+    <audio id="manha" preload="none">
+        <source src="assets/audio/pagna_9/MOTHER_1.mp3" type="audio/mpeg"/>
+    </audio>
+    
+     <audio  id="tarde" preload="none">
+        <source src="assets/audio/pagna_9/YURI_6.mp3" type="audio/mpeg"/>
+    </audio>
+    
+    <audio  id="tchau" preload="none">
+        <source src="assets/audio/pagna_9/YURI.mp3" type="audio/mpeg"/>
+    </audio>
+    
+  </li>
+  <li class="page" data-name="15">
+    <img class="pageItem" src="assets/images/item_15.png" alt="page item"/>
+    <canvas id="canvas16Gaps" width="768" height="924" style="position: relative;top: 19%;left: 3%;"></canvas>
+  </li>
+  <li class="page" data-name="19">
+    <img class="pageItem" src="assets/images/item_18.png" alt="page item"/>
+    <canvas id='canvas19' width="625px" height="875px" style="position:relative;top:14%;left:10%;z-index: 2;"></canvas>
+  </li>
+  <li class="page" data-name="16-memoria">
+    <img class="pageItem" src="assets/images/jogo_da_memoria.png" alt="page item"/>
+    <canvas id="canvas16Memoria" width="600" height="924" style="position: relative;left: 18%;top: 31%;"></canvas>
+  </li>
+  
+  
+  
+  
+</ul>
+<nav>
+<button id="nextBtn" name="nextBtn">&nbsp;</button>
+<button id="backBtn" name="backBtn">&nbsp;</button>
+</nav>
+
+<div id="prefooter" style="float:left;height:1px;">&nbsp;</div>
+</div>
+<div id="in5footer">Built with <a href="http://ajarproductions.com/pages/products/in5/?ref=footer" target="_blank" >In5</a>.</div>
+</body>
+
+</html>
